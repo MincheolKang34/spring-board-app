@@ -1,4 +1,4 @@
-<div th:replace="~{/user/_head.html}"></div>
+<th:block th:include="~{/user/_head.html}"></th:block>
         <main id="user">
             <section class="login">
                 <form action="../article/list.html">                    
@@ -28,4 +28,4 @@
                 </div>
             </section>
         </main>
-<div th:replace="~{/user/_tail.html}"></div>
+<th:block th:include="~{user/_tail.html}"></th:block>
