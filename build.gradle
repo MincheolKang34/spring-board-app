@@ -8,6 +8,12 @@ group = 'kr.co.sboard'
 version = '0.0.1-SNAPSHOT'
 description = 'sboard'
 
+processResources {
+    filesMatching('**/application.yml') {
+        expand(project.properties)
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
