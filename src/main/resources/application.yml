@@ -11,6 +11,7 @@ server:
 spring:
   application:
     name: sboard
+    version: 0.0.1
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     password: 1234
