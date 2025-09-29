@@ -1,4 +1,6 @@
 <div th:replace="~{user/_head.html}"></div>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script th:src="@{/js/postcode.js}"></script>
         <main id="user">
             <section class="register">
 
@@ -58,16 +60,16 @@
                         <tr>
                             <td>주소</td>
                             <td>
-                                <input type="text" name="zip" placeholder="우편번호"/>
-                                <button type="button"><img th:src="@{/images/chk_post.gif}" alt="우편번호찾기"/></button>
-                                <input type="text" name="addr1" placeholder="주소 검색"/>
-                                <input type="text" name="addr2" placeholder="상세주소 입력"/>
+                                <input type="text" name="zip" id="zip" readonly placeholder="우편번호"/>
+                                <button type="button" onclick="postcode()"><img th:src="@{/images/chk_post.gif}" alt="우편번호찾기"/></button>
+                                <input type="text" name="addr1" id="addr1" readonly placeholder="주소 검색"/>
+                                <input type="text" name="addr2" id="addr2" placeholder="상세주소 입력"/>
                             </td>
                         </tr>
                     </table>
 
                     <div>
-                        <a href="./login.html" class="btn btnCancel">취소</a>
+                        <a th:href="@{/user/login}" class="btn btnCancel">취소</a>
                         <input type="submit" value="회원가입" class="btn btnRegister"/>
                     </div>
 
