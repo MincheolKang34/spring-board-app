@@ -5452,3 +5452,14 @@ org.hibernate.id.IdentifierGenerationException: Identifier of entity 'kr.co.sboa
 2025-09-29T09:59:15.916+09:00  INFO 2040 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
 2025-09-29T09:59:15.920+09:00  INFO 2040 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.744 seconds (process running for 1714.515)
 2025-09-29T09:59:15.920+09:00  INFO 2040 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-29T10:00:11.055+09:00  INFO 2040 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-29T10:00:11.055+09:00  INFO 2040 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-29T10:00:11.056+09:00  INFO 2040 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-29T10:00:11.220+09:00  WARN 2040 --- [sboard] [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 1, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-09-29T10:00:11.221+09:00  WARN 2040 --- [sboard] [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 31, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-09-29T10:08:18.804+09:00  INFO 2040 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-09-29T10:08:18.805+09:00  INFO 2040 --- [sboard] [Thread-53] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-29T10:08:18.875+09:00  INFO 2040 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-29T10:08:18.877+09:00  INFO 2040 --- [sboard] [Thread-53] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-29T10:08:18.877+09:00  INFO 2040 --- [sboard] [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2025-09-29T10:08:18.982+09:00  INFO 2040 --- [sboard] [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
