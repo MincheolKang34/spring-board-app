@@ -29,8 +29,24 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mincheolkang34@gmail.com
+    password: yiuvorelytakjupk
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          starttls:
+            enable: true
   security:
     user:
       name: user
       password: 1234
       role: ADMIN
+  servlet:
+    multipart:
+      location: upload
+      max-file-size: 10MB

@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>글목록</title>
-    <link rel="stylesheet" href="../css/style.css"/>
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-            <h3>
-                <a href="/index.html" class="title">Board Project</a>
-            </h3>
-            <p>
-                <a href="../user/info.html" class="info">홍길동</a>님 반갑습니다.
-                <a href="../user/login.html">[로그아웃]</a>
-            </p>
-        </header>
+<div th:replace="~{article/_head.html}"></div>
         <main id="article">
             <section class="list">
                 <nav>
@@ -23,7 +6,7 @@
                         전체 글목록
                         <span>1012건</span>
                     </h1>
-                    <form action="./searchList.html">
+                    <form th:action="@{/article/searchList}">
                         <select name="searchType">
                     		<option value="title">제목</option>
                     		<option value="content">내용</option>
@@ -44,7 +27,7 @@
                     </tr>                    
                     <tr>
                         <td>1</td>
-                        <td><a href="./view.html">테스트 제목입니다.[3]</a></td>
+                        <td><a th:href="@{/article/view}">테스트 제목입니다.[3]</a></td>
                         <td>길동이</td>
                         <td>20-05-12</td>
                         <td>12</td>
@@ -59,16 +42,8 @@
                     <a href="#" class="next">다음</a>
                 </div>
 
-                <a href="./write.html" class="btn btnWrite">글쓰기</a>
+                <a th:href="@{/article/write}" class="btn btnWrite">글쓰기</a>
                 
             </section>
         </main>
-        <footer>
-            <p>
-                <span class="copyright">Copyrightⓒ 김철학(개발에반하다.)</span>
-                <span class="version">v1.0.1</span>
-            </p>
-        </footer>
-    </div>    
-</body>
-</html>
+<div th:replace="~{article/_tail.html}"></div>
