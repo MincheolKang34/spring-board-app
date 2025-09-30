@@ -36,7 +36,16 @@ public class ArticleService {
 
         Pageable pageable = pageRequestDTO.getPageable("ano");
 
-        Page<Tuple> pageTuple = articleRepository.selectArticleAllForList(pageRequestDTO, pageable);
+        Page<Tuple> pageTuple = null;
+
+        if(pageRequestDTO.getSearchType() != null){
+            // 검색 글 목록
+            pageTuple = articleRepository.selectArticleAllForSearch(pageRequestDTO, pageable);
+        }else{
+            // 일반 글 목록
+            pageTuple = articleRepository.selectArticleAllForList(pageRequestDTO, pageable);
+        }
+
 
         List<Tuple> tupleList = pageTuple.getContent();
         int total = (int) pageTuple.getTotalElements();

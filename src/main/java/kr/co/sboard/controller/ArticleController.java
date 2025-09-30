@@ -35,8 +35,13 @@ public class ArticleController {
         return "article/modify";
     }
 
-    @GetMapping("/article/searchList")
-    public String searchList(){
+    @GetMapping("/article/search")
+    public String searchList(PageRequestDTO pageRequestDTO, Model model){
+        log.info("pageRequestDTO = {}", pageRequestDTO);
+
+        PageResponseDTO pageResponseDTO = articleService.getArticleAll(pageRequestDTO);
+        model.addAttribute(pageResponseDTO);
+
         return "article/searchList";
     }
 
