@@ -64,7 +64,7 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom {
         }else if(searchType.equals("content")){
             expression = qArticle.content.contains(keyword);
         }else if(searchType.equals("writer")){
-            //expression = qArticle.nick.contains(keyword);
+            expression = qUser.nick.contains(keyword);
         }
 
         List<Tuple> tupleList = jpaQueryFactory.select(qArticle, qUser.nick)
@@ -81,6 +81,8 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom {
         long total = jpaQueryFactory
                 .select(qArticle.count())
                 .from(qArticle)
+                .join(qUser)
+                .on(qArticle.writer.eq(qUser.usid))
                 .where(expression)
                 .fetchOne();
 

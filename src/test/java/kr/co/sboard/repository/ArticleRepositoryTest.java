@@ -1,6 +1,7 @@
 package kr.co.sboard.repository;
 
 import com.querydsl.core.Tuple;
+import kr.co.sboard.dto.PageRequestDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,8 +22,9 @@ class ArticleRepositoryTest {
     @Test
     void test1(){
         Pageable pageable = PageRequest.of(0, 10);
+        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
 
-        Page<Tuple> pageTuple = articleRepository.selectArticleAllForList(pageable);
+        Page<Tuple> pageTuple = articleRepository.selectArticleAllForList(pageRequestDTO, pageable);
 
         List<Tuple> tupleList = pageTuple.getContent();
 
