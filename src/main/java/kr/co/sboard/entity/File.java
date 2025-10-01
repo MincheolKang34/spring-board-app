@@ -20,7 +20,7 @@ public class File {
     private int ano;
     private String oname;
     private String sname;
-    private String download;
+    private int download;
     @CreationTimestamp
     private LocalDateTime rdate;
 }

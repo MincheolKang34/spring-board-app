@@ -7,13 +7,19 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -64,9 +70,32 @@ public class FileService {
         }
         return fileDTOList;
     }
-    public void download(){}
+    public void download(FileDTO fileDTO){
+        Path path = Paths.get(uploadPath + File.separator + fileDTO.getSname());
 
-    public void getFile(){}
+        try {
+            // 파일 컨텐츠 확인
+            String contentType = Files.probeContentType(path);
+            fileDTO.setContentType(contentType); // 얕은 복사
+
+            // 파일 자원 객체
+            Resource resource = new InputStreamResource(Files.newInputStream(path));
+            fileDTO.setResource(resource); // 얕은 복사
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public FileDTO getFile(int fno){
+        Optional<kr.co.sboard.entity.File> optFile = fileRepository.findById(fno);
+        if(optFile.isPresent()){
+            kr.co.sboard.entity.File file = optFile.get();
+            return modelMapper.map(file, FileDTO.class);
+        }
+
+        return null;
+    }
     public void getFileAll(){}
 
     public void save(FileDTO fileDTO){
@@ -75,5 +104,14 @@ public class FileService {
     }
 
     public void modify(){}
+    public void modifyDownloadCount(FileDTO fileDTO){
+        int download = fileDTO.getDownload();
+        log.info("Download count is {}", download);
+        fileDTO.setDownload(download + 1);
+        log.info("Plused download count is {}", fileDTO.getDownload());
+
+        kr.co.sboard.entity.File file = modelMapper.map(fileDTO, kr.co.sboard.entity.File.class);
+        fileRepository.save(file);
+    }
     public void remove(){}
 }
