@@ -43,7 +43,11 @@ public class ArticleController {
     public String searchList(PageRequestDTO pageRequestDTO, Model model){
         log.info("pageRequestDTO = {}", pageRequestDTO);
 
-        PageResponseDTO pageResponseDTO = articleService.getArticleAll(pageRequestDTO);
+        // JPA
+        //PageResponseDTO pageResponseDTO = articleService.getArticleAll(pageRequestDTO);
+        // MyBatis
+        PageResponseDTO pageResponseDTO = articleService.selectArticleAll(pageRequestDTO);
+
         model.addAttribute(pageResponseDTO);
 
         return "article/searchList";

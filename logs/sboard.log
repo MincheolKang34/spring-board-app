@@ -198,3 +198,162 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2025-10-02T10:45:28.775+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v0.0.6-SNAPSHOT using Java 17.0.0.1 with PID 12216 (C:\Users\GGG\Desktop\workspace\sboard\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\sboard)
+2025-10-02T10:45:28.777+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T10:45:28.815+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\GGG\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.7.0.25.01\665f52abef9122ce003b5cfc1d9d44f7302e2cfe\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/GGG/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.7.0.25.01/665f52abef9122ce003b5cfc1d9d44f7302e2cfe/oraclepki.jar
+2025-10-02T10:45:28.815+09:00  INFO 12216 --- [sboard] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-02T10:45:28.815+09:00  INFO 12216 --- [sboard] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-02T10:45:29.480+09:00  INFO 12216 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T10:45:29.534+09:00  INFO 12216 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2025-10-02T10:45:30.063+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-02T10:45:30.074+09:00  INFO 12216 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-02T10:45:30.075+09:00  INFO 12216 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-02T10:45:30.113+09:00  INFO 12216 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2025-10-02T10:45:30.113+09:00  INFO 12216 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2025-10-02T10:45:30.282+09:00  INFO 12216 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T10:45:30.330+09:00  INFO 12216 --- [sboard] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-02T10:45:30.365+09:00  INFO 12216 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T10:45:30.621+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T10:45:30.648+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-02T10:45:30.653+09:00  WARN 12216 --- [sboard] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-02T10:45:31.021+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1e95c90e
+2025-10-02T10:45:31.023+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-02T10:45:31.335+09:00  INFO 12216 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-02T10:45:32.141+09:00  INFO 12216 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T10:45:32.144+09:00  INFO 12216 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T10:45:32.673+09:00  WARN 12216 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T10:45:32.702+09:00  INFO 12216 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-10-02T10:45:32.783+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-10-02T10:45:33.133+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-02T10:45:33.163+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2025-10-02T10:45:33.170+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 4.837 seconds (process running for 5.377)
+2025-10-02T10:45:34.536+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-02T10:45:34.536+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-02T10:45:34.537+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-02T10:45:38.899+09:00  WARN 12216 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 1, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-10-02T10:45:38.962+09:00  WARN 12216 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 31, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-10-02T10:45:49.409+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] k.c.sboard.controller.ArticleController  : ano = 1302
+2025-10-02T10:46:09.722+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-4] k.c.sboard.controller.ArticleController  : ano = 1302
+2025-10-02T10:46:56.953+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-5] k.c.sboard.controller.ArticleController  : ano = 1302
+2025-10-02T10:47:00.561+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-6] k.c.sboard.controller.ArticleController  : ano = 1301
+2025-10-02T10:47:07.096+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-9] k.c.sboard.controller.ArticleController  : ano = 1285
+2025-10-02T10:47:48.987+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-2] k.c.sboard.controller.ArticleController  : ano = 1302
+2025-10-02T10:51:52.956+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-6] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=1, size=10, cate=free, searchType=title, keyword=파일, offset=0)
+2025-10-02T10:52:03.888+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-8] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=2, size=10, cate=free, searchType=title, keyword=파일, offset=10)
+2025-10-02T10:52:05.737+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-10] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=3, size=10, cate=free, searchType=title, keyword=파일, offset=20)
+2025-10-02T10:52:08.208+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-2] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=4, size=10, cate=free, searchType=title, keyword=파일, offset=30)
+2025-10-02T10:52:10.055+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-4] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=5, size=10, cate=free, searchType=title, keyword=파일, offset=40)
+2025-10-02T10:52:10.784+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-6] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=7, size=10, cate=free, searchType=title, keyword=파일, offset=60)
+2025-10-02T10:52:12.008+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-8] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=6, size=10, cate=free, searchType=title, keyword=파일, offset=50)
+2025-10-02T10:52:12.896+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-10] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=8, size=10, cate=free, searchType=title, keyword=파일, offset=70)
+2025-10-02T10:52:13.440+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-2] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=9, size=10, cate=free, searchType=title, keyword=파일, offset=80)
+2025-10-02T10:52:14.120+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-4] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=10, size=10, cate=free, searchType=title, keyword=파일, offset=90)
+2025-10-02T10:52:14.887+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-6] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=11, size=10, cate=free, searchType=title, keyword=파일, offset=100)
+2025-10-02T10:52:16.592+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-8] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=21, size=10, cate=free, searchType=title, keyword=파일, offset=200)
+2025-10-02T10:52:17.607+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-10] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=31, size=10, cate=free, searchType=title, keyword=파일, offset=300)
+2025-10-02T10:55:07.000+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-5] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=31, size=10, cate=free, searchType=title, keyword=파일, offset=300)
+2025-10-02T10:55:08.640+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-3] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=31, size=10, cate=free, searchType=title, keyword=파일, offset=300)
+2025-10-02T10:55:09.667+09:00  INFO 12216 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-02T10:55:09.669+09:00  INFO 12216 --- [sboard] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-02T10:55:09.739+09:00  INFO 12216 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-02T10:55:09.744+09:00  INFO 12216 --- [sboard] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T10:55:09.746+09:00  INFO 12216 --- [sboard] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-02T10:55:09.850+09:00  INFO 12216 --- [sboard] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-02T10:55:09.942+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v0.0.6-SNAPSHOT using Java 17.0.0.1 with PID 12216 (C:\Users\GGG\Desktop\workspace\sboard\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\sboard)
+2025-10-02T10:55:09.942+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T10:55:10.146+09:00  INFO 12216 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T10:55:10.162+09:00  INFO 12216 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2025-10-02T10:55:10.278+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-02T10:55:10.279+09:00  INFO 12216 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-02T10:55:10.279+09:00  INFO 12216 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-02T10:55:10.295+09:00  INFO 12216 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2025-10-02T10:55:10.296+09:00  INFO 12216 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 352 ms
+2025-10-02T10:55:10.306+09:00  WARN 12216 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [30815FE076463427AA8871A6BBA53F37]
+2025-10-02T10:55:10.327+09:00  INFO 12216 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T10:55:10.332+09:00  INFO 12216 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T10:55:10.342+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T10:55:10.343+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-02T10:55:10.343+09:00  WARN 12216 --- [sboard] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-02T10:55:10.470+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@74518e92
+2025-10-02T10:55:10.470+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-02T10:55:10.539+09:00  INFO 12216 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-02T10:55:10.607+09:00  INFO 12216 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T10:55:10.607+09:00  INFO 12216 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T10:55:10.714+09:00  WARN 12216 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T10:55:10.722+09:00  INFO 12216 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-10-02T10:55:10.731+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-10-02T10:55:10.840+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-02T10:55:10.850+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2025-10-02T10:55:10.854+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.942 seconds (process running for 583.061)
+2025-10-02T10:55:10.856+09:00  INFO 12216 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-02T10:55:15.309+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-02T10:55:15.309+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-02T10:55:15.310+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-02T10:55:15.328+09:00  WARN 12216 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 1, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-10-02T10:55:15.330+09:00  WARN 12216 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 31, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-10-02T10:55:21.926+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-2] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=31, size=10, cate=free, searchType=title, keyword=파일, offset=300)
+2025-10-02T10:55:25.663+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-9] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=30, size=10, cate=free, searchType=title, keyword=파일, offset=290)
+2025-10-02T10:55:26.312+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=20, size=10, cate=free, searchType=title, keyword=파일, offset=190)
+2025-10-02T10:55:26.976+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-3] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=10, size=10, cate=free, searchType=title, keyword=파일, offset=90)
+2025-10-02T10:55:28.295+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-7] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=1, size=10, cate=free, searchType=title, keyword=파일, offset=0)
+2025-10-02T10:56:48.390+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-10] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=1, size=10, cate=free, searchType=title, keyword=파일, offset=0)
+2025-10-02T10:56:49.858+09:00  INFO 12216 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2025-10-02T10:56:49.859+09:00  INFO 12216 --- [sboard] [Thread-9] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-02T10:56:49.931+09:00  INFO 12216 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-02T10:56:49.934+09:00  INFO 12216 --- [sboard] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T10:56:49.935+09:00  INFO 12216 --- [sboard] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-02T10:56:50.035+09:00  INFO 12216 --- [sboard] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-02T10:56:50.121+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.0.1 with PID 12216 (C:\Users\GGG\Desktop\workspace\sboard\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\sboard)
+2025-10-02T10:56:50.121+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T10:56:50.308+09:00  INFO 12216 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T10:56:50.323+09:00  INFO 12216 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2025-10-02T10:56:50.433+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-02T10:56:50.434+09:00  INFO 12216 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-02T10:56:50.434+09:00  INFO 12216 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-02T10:56:50.450+09:00  INFO 12216 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2025-10-02T10:56:50.450+09:00  INFO 12216 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 328 ms
+2025-10-02T10:56:50.461+09:00  WARN 12216 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [20F3692F24991D08069070C8271DDD01]
+2025-10-02T10:56:50.479+09:00  INFO 12216 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T10:56:50.482+09:00  INFO 12216 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T10:56:50.490+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T10:56:50.490+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-02T10:56:50.491+09:00  WARN 12216 --- [sboard] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-02T10:56:50.617+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@61e929aa
+2025-10-02T10:56:50.618+09:00  INFO 12216 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-02T10:56:50.688+09:00  INFO 12216 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-02T10:56:50.748+09:00  INFO 12216 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T10:56:50.748+09:00  INFO 12216 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T10:56:50.837+09:00  WARN 12216 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T10:56:50.846+09:00  INFO 12216 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-10-02T10:56:50.853+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-10-02T10:56:50.942+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-02T10:56:50.951+09:00  INFO 12216 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2025-10-02T10:56:50.955+09:00  INFO 12216 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.86 seconds (process running for 683.162)
+2025-10-02T10:56:50.956+09:00  INFO 12216 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-02T10:56:51.046+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-02T10:56:51.046+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-02T10:56:51.047+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-02T10:56:51.059+09:00  WARN 12216 --- [sboard] [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 1, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-10-02T10:56:51.060+09:00  WARN 12216 --- [sboard] [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][user/login] Deprecated attribute {th:include,data-th-include} found in template user/login, line 31, col 11. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-10-02T10:56:56.056+09:00  INFO 12216 --- [sboard] [http-nio-8080-exec-7] k.c.sboard.controller.ArticleController  : pageRequestDTO = PageRequestDTO(no=1, pg=1, size=10, cate=free, searchType=title, keyword=파일, offset=0)

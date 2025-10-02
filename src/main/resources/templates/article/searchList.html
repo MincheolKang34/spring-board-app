@@ -4,7 +4,7 @@
                 <nav>
                     <h1>
                         <a th:href="@{/article/list}">전체 글목록</a>&nbsp;/&nbsp;검색
-                        <span>검색결과 : 12건</span>
+                        <span>검색결과 : [[${pageResponseDTO.total}]]건</span>
                     </h1>
                     <form th:action="@{/article/search}">
                         <select name="searchType">
