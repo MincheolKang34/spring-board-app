@@ -25,7 +25,11 @@ public class ArticleController {
 
     @GetMapping("/article/list")
     public String list(Model model, PageRequestDTO pageRequestDTO){
-        PageResponseDTO pageResponseDTO = articleService.getArticleAll(pageRequestDTO);
+        // JPA
+        //PageResponseDTO pageResponseDTO = articleService.getArticleAll(pageRequestDTO);
+
+        // MyBatis
+        PageResponseDTO pageResponseDTO = articleService.selectArticleAll(pageRequestDTO);
         model.addAttribute(pageResponseDTO);
         return "article/list";
     }
