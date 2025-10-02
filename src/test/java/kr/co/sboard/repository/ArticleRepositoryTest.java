@@ -23,6 +23,7 @@ class ArticleRepositoryTest {
     ArticleRepository articleRepository;
 
     @Test
+    @Transactional
     void test1(){
         Pageable pageable = PageRequest.of(0, 10);
         PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
